@@ -17,9 +17,9 @@ body {
 header {
     background: #333;
     color: #fff;
-    padding: 10px 0;
+    padding: 1px 0;
     text-align: center;
-    position: sticky;
+    position: right;
     top: 0;
     z-index: 1000;
 }
@@ -155,9 +155,42 @@ footer {
     bottom: 0;
 }
 
+.login-register {
+    background-color: #333;
+    border: 1px light #0a58ea;
+    border-radius: 5px; 
+    padding: 1px;
+    width: 200px;
+    margin: 10px auto;
+    text-align: center;
+}
+.login-register button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+.login-register button:hover {
+    background-color: #0056b3;
+}
+
+.login-register a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.login-register a:hover {
+    text-decoration: underline;
+}
 </style>
 <body>
     <header>
+       
         
         <div class="header-content">
             <div class="logo-nav">
@@ -177,6 +210,11 @@ footer {
                     <span class="search-icon">🔍</span>
                 </button>
             </div>
+            
+        </div>
+        <div class="login-register">
+            <button>Login</button>
+            <button>Register</button>   
         </div>
     </header>
 
@@ -193,7 +231,7 @@ footer {
                 
             </ul>
         </aside>
-
+        
         <div class="content">
             <article class="news-item" id="Pendidikan">
                 <img src="gambar/gambar-1.jpeg" alt="Gambar Berita">
